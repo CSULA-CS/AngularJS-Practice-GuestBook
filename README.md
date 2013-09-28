@@ -14,7 +14,7 @@ Install [Node.js](http://nodejs.org/)
 4. Open browser and type in the following in address `http://localhost:8000/app/index.html`
 
 
-What I want you to do using Github is:  
+####What I want you to do using Github is:  
 ```
 (
   note:
@@ -29,8 +29,8 @@ What I want you to do using Github is:
 3. Finish the following requirements as you run through the tutorial
 4. Push your branch to server
 
-Guest book is what you need to do!  
-Some sample requirements:
+####Guest book is what you need to do!  
+#####Some sample requirements:
 
 1. post and delete a comment (This can be done using javascript in ... controller!)
 2. list comments (Think about it like the example I showed in class huh ... ng-repeat?)
