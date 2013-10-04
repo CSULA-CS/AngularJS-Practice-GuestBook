@@ -35,34 +35,19 @@
 <body ng-controller="MainCtrl">
 <div class="container">
   
-  <h1>Guest Book</h1>
+  <h1>Add Comment</h1>
 
   <ul class="nav nav-tabs">
     <li>
-      <a href="#/listComment">
-        Comments
-      </a>
+      <<input ng-model="query">
     </li>
     <li><a href="#/createComment">
       Create Comment
     </a></li>
-    
- 
-  
   </ul>
 
   <!-- this is the fun part -->
   <div ng-view></div>
-  <ul>
-    <li ng-repeat="comment in comments">
-      {{comment.name}}
-      <p>{{comment.comment}}</p>
-    </li>
-  </ul>
-  <table>
-      <tr><th>row number</th></tr>
-      <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]"><td>{{i}}</td></tr>
-    </table>
 </div>
 </body>
 </html>
