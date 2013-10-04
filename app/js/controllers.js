@@ -15,11 +15,15 @@ function MainCtrl($scope, GuestBookStashData) {
 }
 
 function ListCommentCtrl($scope) {
-	
+	// because this is actually another scope under the MainCtrl,
+	// therefore, we want to get the comments from $parent
+	$scope.comments = $scope.$parent.comments;
 }
 
 function CreateCommentCtrl($scope) {
-	
+	$scope.createComment = function(newComment) {
+		$scope.$parent.comments.push(newComment)
+	};
 }
 
 function EditCommentCtrl($scope) {
