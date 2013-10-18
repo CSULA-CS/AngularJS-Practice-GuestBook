@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" ng-app="GuestBookApp">
+<head>
+  <meta charset="utf-8">
+  <title>Guest Book</title>
+
+  <!-- Mobile platform, always think responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Jquery is the dependency for Angularjs bootstrap -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <!-- Feel free to utilize the AngularJS Bootstrap -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+  <!-- The followings are for Angularjs -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+
+  <!-- Whatever your custom css will be -->
+  <link rel="stylesheet" href="css/app.css"/>
+
+</head>
+<body>
+
+  <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-2">
+          <p><a class="btn btn-default" href="#"> + </a></p> 
+          <h4>VOLUME</h4>
+          <p><a class="btn btn-danger" href="#"> - </a></p>
+        </div>
+        <div class="col-lg-2">
+          <h4>STATION</h4>
+          <p>102.7</p>
+          <p><a class="btn btn-default" href="#"> + </a><a class="btn btn-danger" href="#"> - </a></p>
+       </div>
+        <div class="col-lg-2">
+          <h4>INPUT</h4>
+          <p><a class="btn btn-default" href="#">FM</a><a class="btn btn-default" href="#">AM</a></p>
+          <p><a class="btn btn-default" href="#">AUX</a><a class="btn btn-default" href="#">CD</a></p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
