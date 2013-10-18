@@ -34,21 +34,27 @@
 </head>
 <body ng-controller="MainCtrl">
 
-  <h1>Guest Book</h1>
+  <div class="container">
 
-  <ul class="nav nav-tabs">
-    <li>
-      <a href="#/listComment">
-        Comments
-      </a>
-    </li>
-    <li><a href="#/createComment">
-      Create Comment
-    </a></li>
-  </ul>
+    <h3>Guest Book</h3>
 
-  <!-- this is the fun part -->
-  <div ng-view></div>
+    <ul class="nav nav-tabs">
+      <li>
+        <a href="#/listComment">
+          Comments
+        </a>
+      </li>
+      <li>
+        <a href="#/admin">
+          Admin
+        </a>
+      </li>
+    </ul>
+
+    <!-- this is the fun part -->
+    <div ng-view></div>
+
+  </div>
 
 </body>
 </html>
