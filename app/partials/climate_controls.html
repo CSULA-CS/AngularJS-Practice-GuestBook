@@ -32,26 +32,34 @@
   <link rel="stylesheet" href="css/app.css"/>
 
 </head>
-<body ng-controller="MainCtrl">
+<body>
 
-
-  <h1>Guest Book</h1>
-
-  <ul class="nav nav-tabs">
-    <li>
-      <a href="#/listComment">
-        Comments
-      </a>
-    </li>
-    <li><a href="#/createComment">
-      Create Comment
-    </a></li>
-  </ul>
-
-  <!-- this is the fun part -->
-  <div ng-view>
-
-  </div>
-
+  <div class="container">
+      <!-- Example row of columns -->
+       <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">AIR</h3>
+            </div>
+            <div class="panel-body">
+              <p><a class="btn btn-default" href="#"> LOW </a><a class="btn btn-primary" href="#"> MED </a><a class="btn btn-danger" href="#"> HIGH </a></p>    
+            </div>
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">TEMP</h3>
+            </div>
+            <div class="panel-body">
+              <p><a class="btn btn-default" href="#"> LOW </a><a class="btn btn-primary" href="#"> MED </a><a class="btn btn-danger" href="#"> HIGH </a></p>  
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-lg-2">
+          <p><a class="btn btn-default" href="#"> ON </a></p> 
+          <h4>AC</h4>
+          <p><a class="btn btn-danger" href="#"> OFF </a></p>
+        </div>
+    </div>
 </body>
 </html>

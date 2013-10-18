@@ -1,23 +1,12 @@
 <!-- simple ng-repeat usage -->
 <h3>Comment Listing</h3>
-<form class="form-inline">
-  <input type="text" class="input-small" placeholder="Email" ng-model="newComment.email">
-  <input type="text" class="input-small" placeholder="Username" ng-model="newComment.username">
-  <input type="text" class="input-small" placeholder="Name" ng-model="newComment.poster">
-  <input type="text" class="" placeholder="Say Anything" ng-model="newComment.content">
-  <button type="submit" class="btn btn-primary" ng-click="createComment(newComment)">Post Comment</button>
-</form>
-<ul class="comments">
-	<li ng-repeat="comment in comments">
-		<div class="profile-img">
-			<img ng-src="https://identicons.github.com/{{ comment.username }}.png" alt="user icon" ng-hide="comment.email">
-			<img ng-src="{{get_gravatar(comment.email)}}" alt="gravatar icon" ng-show="comment.email">
-		</div>
-		<div class="comment-content">
-			<p>
-				{{ comment.content }}
-			</p>
-		</div>
-		<div class="clearfix"></div>
-	</li>
-</ul>
+
+<div>
+		<ul>
+			<li ng-repeat="comment in comments">
+				<h3>{{comment.content}}</h3>
+				posted by 
+				{{comment.poster}} 
+			</li>
+		</ul>
+</div>

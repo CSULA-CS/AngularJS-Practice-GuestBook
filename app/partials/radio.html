@@ -32,26 +32,27 @@
   <link rel="stylesheet" href="css/app.css"/>
 
 </head>
-<body ng-controller="MainCtrl">
+<body>
 
-
-  <h1>Guest Book</h1>
-
-  <ul class="nav nav-tabs">
-    <li>
-      <a href="#/listComment">
-        Comments
-      </a>
-    </li>
-    <li><a href="#/createComment">
-      Create Comment
-    </a></li>
-  </ul>
-
-  <!-- this is the fun part -->
-  <div ng-view>
-
-  </div>
-
+  <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-2">
+          <p><a class="btn btn-default" href="#"> + </a></p> 
+          <h4>VOLUME</h4>
+          <p><a class="btn btn-danger" href="#"> - </a></p>
+        </div>
+        <div class="col-lg-2">
+          <h4>STATION</h4>
+          <p>102.7</p>
+          <p><a class="btn btn-default" href="#"> + </a><a class="btn btn-danger" href="#"> - </a></p>
+       </div>
+        <div class="col-lg-2">
+          <h4>INPUT</h4>
+          <p><a class="btn btn-default" href="#">FM</a><a class="btn btn-default" href="#">AM</a></p>
+          <p><a class="btn btn-default" href="#">AUX</a><a class="btn btn-default" href="#">CD</a></p>
+        </div>
+      </div>
+    </div>
 </body>
 </html>

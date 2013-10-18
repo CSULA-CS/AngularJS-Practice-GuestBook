@@ -16,8 +16,15 @@ angular.module('GuestBookApp', ['GuestBookApp.services']).
     $routeProvider.when(
     	'/admin',
     	{
-    		templateUrl: 'partials/admin.html',
-    		controller: 'AdminCommentCtrl'
+    		templateUrl: 'partials/createComment.html',
+    		controller: 'CreateCommentCtrl'
+    	}
+    );
+    $routeProvider.when(
+    	'/editComment',
+    	{
+    		templateUrl: 'partials/editComment.html',
+    		controller: 'EditCommentCtrl'
     	}
     );
     $routeProvider.otherwise(
