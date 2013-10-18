@@ -7,29 +7,36 @@ angular.module('GuestBookApp', ['GuestBookApp.services']).
   	// As I mentioned before, each page may have individual logic which is why each page may have their specific
   	// controller being defined
   	$routeProvider.when(
-    	'/listComment',
+    	'/start',
     	{
-    		templateUrl: 'partials/listComment.html',
-    		controller: 'ListCommentCtrl'
+    		templateUrl: 'partials/start.html',
+    		controller: 'StartPageCtrl'
     	}
     );
     $routeProvider.when(
-    	'/admin',
+    	'/radio',
     	{
-    		templateUrl: 'partials/createComment.html',
-    		controller: 'CreateCommentCtrl'
+    		templateUrl: 'partials/radio.html',
+    		controller: 'RadioCtrl'
     	}
     );
     $routeProvider.when(
-    	'/editComment',
-    	{
-    		templateUrl: 'partials/editComment.html',
-    		controller: 'EditCommentCtrl'
-    	}
+        '/climateControls',
+        {
+            templateUrl: 'partials/climate_controls.html',
+            controller: 'climateControlCtrl'
+        }
+    );    
+    $routeProvider.when(
+        '/diagnostics',
+        {
+            templateUrl: 'partials/diagnostics.html',
+            controller: 'DiagnosticCtrl'
+        }
     );
     $routeProvider.otherwise(
     	{
-    		redirectTo: '/listComment'
+    		redirectTo: '/start'
     	}
     );
   }]);

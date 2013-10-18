@@ -2,7 +2,7 @@
 <html lang="en" ng-app="GuestBookApp">
 <head>
   <meta charset="utf-8">
-  <title>Guest Book</title>
+  <title>Car Console</title>
 
   <!-- Mobile platform, always think responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,24 +34,33 @@
 </head>
 <body ng-controller="MainCtrl">
 
+<div  class="grid">
+  <div class="sidebar">
 
-  <h1>Guest Book</h1>
 
-  <ul class="nav nav-tabs">
-    <li>
-      <a href="#/listComment">
-        Comments
-      </a>
-    </li>
-    <li><a href="#/createComment">
-      Create Comment
-    </a></li>
-  </ul>
-
-  <!-- this is the fun part -->
-  <div ng-view>
-
+    <ul class="nav nav-list">
+      <li>
+        <a href="#/start">
+          Start
+        </a>
+      </li>
+      <li><a href="#/climateControls">
+        Climate Controls
+      </a></li>
+      <li><a href="#/radio">
+        Radio
+      </a></li>
+      <li><a href="#/diagnostics">
+        Diagnostics
+      </a></li>    
+    </ul>
   </div>
+
+  <div class="window"><div ng-view></div>
+  </div>
+</div>
+<div class="clear"></div>
+
 
 </body>
 </html>

@@ -11,16 +11,11 @@ function MainCtrl($scope, GuestBookStashData) {
 	// If you have any further questions on scope feel free to ask me on google hangout by Eric
 	
 	// In short this is the comments you will be getting from services, look into services.js for more detail
-	
-	
-	$scope.comments = GuestBookStashData.getComments();
+//	$scope.comments = GuestBookStashData.getComments();
 }
 
-function ListCommentCtrl($scope) {
-	$scope.comments = $scope.$parent.comments;
+function StartPageCtrl($scope) {
 	
-	$scope.addComment = function(com) {
-	$scope.comments.push(com);
 }
 
 function CreateCommentCtrl($scope) {
@@ -41,4 +36,16 @@ function AdminCommentCtrl($scope) {
     $scope.updateComment = function(index, comment) {
         $scope.comments[index] = comment;
     };
+}
+
+function DiagnosticPageCtrl($scope) {
+	
+}
+
+function RadioPageCtrl($scope) {
+	
+}
+
+function ClimateControlPage($scope) {
+	
 }
