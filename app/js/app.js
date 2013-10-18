@@ -17,7 +17,7 @@ angular.module('GuestBookApp', ['GuestBookApp.services']).
     	'/createComment',
     	{
     		templateUrl: 'partials/createComment.html',
-    		controller: 'CreatCommentCtrl'
+    		controller: 'CreateCommentCtrl'
     	}
     );
     $routeProvider.when(

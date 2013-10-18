@@ -1,2 +1,12 @@
 <!-- simple ng-repeat usage -->
 <h3>Comment Listing</h3>
+
+<div>
+		<ul>
+			<li ng-repeat="comment in comments">
+				<h3>{{comment.content}}</h3>
+				posted by 
+				{{comment.poster}} 
+			</li>
+		</ul>
+</div>
