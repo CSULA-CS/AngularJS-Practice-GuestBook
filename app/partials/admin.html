@@ -1,0 +1,15 @@
+<h3>Admin</h3>
+<ul class="comments">
+	<li ng-repeat="comment in comments">
+		<div class="profile-img">
+			<img ng-src="https://identicons.github.com/{{ comment.username }}.png" alt="user icon" ng-hide="comment.email">
+			<img ng-src="{{get_gravatar(comment.email)}}" alt="gravatar icon" ng-show="comment.email">
+		</div>
+		<div class="comment-content">
+			<p>
+				{{ comment.content }} | <button class="btn btn-link" ng-click="deleteComment($index)"><i class="glyphicon glyphicon-remove"></i></button>
+			</p>
+		</div>
+		<div class="clearfix"></div>
+	</li>
+</ul>

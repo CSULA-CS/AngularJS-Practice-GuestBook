@@ -12,10 +12,13 @@ angular.module('GuestBookApp.services', []).
   	var comments = [
   		{
   			poster : 'Eric Liao',
+        username: 'rcliao',
+        email: 'rcliao01@gmail.com',
   			content: 'Hello, World'
   		},
   		{
   			poster : 'Eric Liao',
+        username: 'rcliao',
   			content: 'This is another test message!'
   		}
   	];
@@ -24,6 +27,9 @@ angular.module('GuestBookApp.services', []).
   		getComments: function() {
   			return comments;
   		},
+      updateComments: function(newComments) {
+        comments = newComments;
+      },
   		comments : comments
   	};
   });
