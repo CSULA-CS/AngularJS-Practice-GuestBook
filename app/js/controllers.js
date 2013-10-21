@@ -23,7 +23,6 @@ function CreateCommentCtrl($scope) {
 						name : 'name', 
 						comment : 'value'
 					};
-	}
 }
 
 function AdminCommentCtrl($scope) {

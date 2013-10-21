@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, directives, and services
-angular.module('GuestBookApp', ['GuestBookApp.services']).
+angular.module('GuestBookApp', ['GuestBookApp.services', 'GuestBookApp.directives']).
   config(['$routeProvider', function($routeProvider) {
   	// As I mentioned before, each page may have individual logic which is why each page may have their specific
   	// controller being defined
@@ -17,21 +17,27 @@ angular.module('GuestBookApp', ['GuestBookApp.services']).
     	'/radio',
     	{
     		templateUrl: 'partials/radio.html',
-    		controller: 'RadioCtrl'
+    		controller: 'RadioPageCtrl'
     	}
     );
     $routeProvider.when(
         '/climateControls',
         {
             templateUrl: 'partials/climate_controls.html',
-            controller: 'climateControlCtrl'
+            controller: 'ClimateControlPage'
         }
     );    
     $routeProvider.when(
         '/diagnostics',
         {
             templateUrl: 'partials/diagnostics.html',
-            controller: 'DiagnosticCtrl'
+            controller: 'DiagnosticPageCtrl'
+        }
+    );
+    $routeProvider.when(
+        '/map',
+        {
+            templateUrl: 'partials/map.html'
         }
     );
     $routeProvider.otherwise(
