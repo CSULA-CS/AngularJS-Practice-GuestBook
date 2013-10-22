@@ -36,7 +36,7 @@ angular.module('GuestBookApp', ['GuestBookApp.services']).
     );
     $routeProvider.otherwise(
     	{
-    		redirectTo: '/start'
+    		redirectTo: 'partials/start'
     	}
     );
   }]);
