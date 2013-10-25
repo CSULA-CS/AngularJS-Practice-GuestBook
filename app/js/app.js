@@ -21,7 +21,7 @@ angular.module('GuestBookApp', ['GuestBookApp.services']).
     	}
     );
     $routeProvider.when(
-        '/climateControls',
+        '/climate_controls',
         {
             templateUrl: 'partials/climate_controls.html',
             controller: 'climateControlCtrl'

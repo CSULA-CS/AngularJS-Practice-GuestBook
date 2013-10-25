@@ -10,7 +10,7 @@ function MainCtrl($scope, GuestBookStashData) {
 	// 
 	// If you have any further questions on scope feel free to ask me on google hangout by Eric
 	
-<<<<<<< HEAD
+
 	// In short this is the comments you will be getting from services,
 	// look into services.js for more detail
 	$scope.comments = [
@@ -19,18 +19,14 @@ function MainCtrl($scope, GuestBookStashData) {
     {"name": "Jane Doe",
      "comment": "The Next, Next Generation"},
   ];
-<<<<<<< HEAD
+
 	
-=======
+
 	$scope.comments = GuestBookStashData.getComments();
-=======
+
 	// In short this is the comments you will be getting from services, look into services.js for more detail
 //	$scope.comments = GuestBookStashData.getComments();
->>>>>>> master
-<<<<<<< HEAD
->>>>>>> a9b6b42bbe02b6ba36827a6ba50cea22396a60ea
-=======
->>>>>>> cf982d0e3e21122c41dc75f4277039110199c196
+
 }
 
 function StartPageCtrl($scope) {

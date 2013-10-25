@@ -30,8 +30,6 @@
 
   <!-- Whatever your custom css will be -->
   <link rel="stylesheet" href="css/app.css"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
   <style>
     * {
       box-sizing: border-box;
@@ -42,84 +40,13 @@
     select {width: 40%;}
     </style>
 </head>
-<body ng-controller="MainCtrl">
 
-
-<div class="container">
-  
-  <h1>Guest Book</h1>
-
-  <ul class="nav nav-tabs">
-    <li>
-      <a href="#/listComment">
-        Comments
-      </a>
-    </li>
-    <li><a href="#/createComment">
-      Create Comment
-    </a></li>
-  </ul>
-
-  <div>
-    <input type="search" ng-model="search">
-  </div>
-
-
-</div>
-<script>
-  
-</script>
-=======
-  <!-- For bootstrap icons -->
-  <span class="glyphicon glyphicon-search"></span>
-
-</head>
 <body ng-controller="MainCtrl">
 
 <div  class="grid">
   <div class="sidebar">
 
 
-    <ul class="nav nav-list">
-      <li>
-          <button type="button" class="btn btn-default btn-lg" onclick="location.href = "#/start";">
-            <span class="glyphicon glyphicon-home"></span> Home
-          </button>
-        
-        <button type="button" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-dashboard"></span> Diagnostics
-        </button>
-        <button type="button" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-adjust"></span> Climate
-        </button>
-        <button type="button" class="btn btn-default btn-lg">
-            <span class="glyphicon glyphicon-volume-up"></span> Audio
-        </button>
-        <a href="#/start">
-          Start
-        </a>
-      </li>
-      <li><a href="#/climateControls">
-        Climate Controls
-      </a></li>
-      <li><a href="#/radio">
-        Radio
-      </a></li>
-      <li><a href="#/diagnostics">
-        Diagnostics
-      </a></li>    
-    </ul>
-
-    <nav class="{{active}}" ng-click="$event.preventDefault()">
-
-    <!-- When a link in the menu is clicked, we set the active variable -->
-
-    <a href="#" class="home" ng-click="active='home'">Home</a>
-    <a href="#" class="projects" ng-click="active='projects'">Projects</a>
-    <a href="#" class="services" ng-click="active='services'">Services</a>
-    <a href="#" class="contact" ng-click="active='contact'">Contact</a>
-  </nav>
-=======
   <!-- For bootstrap icons -->
   <span class="glyphicon glyphicon-search"></span>
 
@@ -139,7 +66,7 @@
           </a>
         </li><br/>
         <li>
-        <a class="btn btn-default btn-lg" href="#/radio">
+        <a class="btn btn-default btn-lg" href="#/diagnostics">
             <span class="glyphicon glyphicon-dashboard"></span> Diagnostics
         </a>
       </li><br/>
@@ -154,7 +81,7 @@
         </a>
       </li>   
     </ul>
->>>>>>> cf982d0e3e21122c41dc75f4277039110199c196
+
   </div>
 
   <div class="window"><div ng-view></div>
@@ -163,9 +90,5 @@
 <div class="clear"></div>
 
 
-<<<<<<< HEAD
->>>>>>> a9b6b42bbe02b6ba36827a6ba50cea22396a60ea
-=======
->>>>>>> cf982d0e3e21122c41dc75f4277039110199c196
 </body>
 </html>
