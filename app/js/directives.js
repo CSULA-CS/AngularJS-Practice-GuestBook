@@ -24,10 +24,14 @@ angular.module('GuestBookApp.directives', []).
         var routeFrom = elem.find('#routeFrom');
 
         var myOptions = {
-            zoom: 14,
+            zoom: 12,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-            center: new google.maps.LatLng(34.06337000000001, -118.170510)
-        };
+            center: new google.maps.LatLng(34.06337000000001, -118.170510),
+            disableDefaultUI: true,
+            scaleControl: true,
+            zoomControl: true,
+
+             };
         map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
         directionsDisplay.setMap(map);
         directionsDisplay.setPanel(document.getElementById("directions"));
@@ -35,7 +39,7 @@ angular.module('GuestBookApp.directives', []).
         routeMode.on("change", function() { calcRoute(); });
         routeGo.on("click", function() { calcRoute(); });
         routeClear.on("click", function() { directionsDisplay.setDirections({ routes: [] }); });
-
+/*
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(34.0653700000001, -118.165010),
           map: map
@@ -63,6 +67,8 @@ angular.module('GuestBookApp.directives', []).
           infowindow3.open(map, this);
         });
 
+        
+
         var content = '<strong>Parking Lot 1</strong>';
 
         var infowindow = new google.maps.InfoWindow({
@@ -80,6 +86,8 @@ angular.module('GuestBookApp.directives', []).
         var infowindow3 = new google.maps.InfoWindow({
           content: content3
         });
+
+*/
 
         // navigator.geolocation.getCurrentPosition(
         //   function( position ){

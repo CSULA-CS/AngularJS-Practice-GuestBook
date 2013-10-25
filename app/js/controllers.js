@@ -12,6 +12,11 @@ function MainCtrl($scope, GuestBookStashData) {
 	
 	// In short this is the comments you will be getting from services, look into services.js for more detail
 //	$scope.comments = GuestBookStashData.getComments();
+	$scope.current = {
+
+		location: '8340 Sheffield Rd, San Gabriel, CA',
+		destination: '5151 State University Dr Los Angeles, CA'
+	}
 }
 
 function StartPageCtrl($scope) {
