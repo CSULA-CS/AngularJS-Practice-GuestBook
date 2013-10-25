@@ -39,7 +39,7 @@ function CreateCommentCtrl($scope) {
 						comment : 'value'
 					};
 	}
-}
+
 
 function AdminCommentCtrl($scope) {
     $scope.comments = $scope.$parent.comments;
