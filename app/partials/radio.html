@@ -1,20 +1,51 @@
-<div class="container">
-  <!-- Example row of columns -->
-  <div class="row">
-    <div class="col-lg-2">
-      <p><a class="btn btn-default" href="#"> + </a></p> 
-      <h4>VOLUME</h4>
-      <p><a class="btn btn-danger" href="#"> - </a></p>
+<!DOCTYPE html>
+<html lang="en" ng-app="GuestBookApp" >
+  <head>
+    <meta charset="utf-8">
+    <title>Radio</title>
+    
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+    <!-- Example row of columns -->
+  
+      <div class="row">
+        
+        <div class="col-lg-4" ng-controller="RadioPageCtrl">
+          <h4>VOLUME</h4>
+          <p><a class="btn btn-default" ng-click="count=count+1" ng-init="count=0"> + </a></p> 
+            <h4>{{count}}</h4>
+          <p><a class="btn btn-danger" ng-click="count=count-1"> - </a></p>
+        </div>
+    
+        
+        <div class="col-lg-4">
+          <h4>STATION</h4>
+          <p><a class="btn btn-default" ng-click="count=count+0.1" ng-init="count=87.5"> + </a></p>
+          <p>{{count}}</p>
+          <p><a class="btn btn-danger" ng-click="count=count-0.1"> - </a></p>
+        </div>
+      
+        
+        <div class="col-lg-4">
+          <h4>MODE</h4>
+          <p><a class="btn btn-default" ng-click="buttonText='FM'">FM</a></p>
+          <p><a class="btn btn-default" ng-click="buttonText='AM'">AM</a></p>
+          <p>Selected Mode: {{buttonText}}</p>
+          <p><a class="btn btn-default" ng-click="buttonText='AUX'">AUX</a></p>
+          <p><a class="btn btn-default" ng-click="buttonText='CD'">CD</a></p>
+        </div>
+      
+      </div>
+    
     </div>
-    <div class="col-lg-2">
-      <h4>STATION</h4>
-      <p>102.7</p>
-      <p><a class="btn btn-default" href="#"> + </a><a class="btn btn-danger" href="#"> - </a></p>
-   </div>
-    <div class="col-lg-2">
-      <h4>INPUT</h4>
-      <p><a class="btn btn-default" href="#">FM</a><a class="btn btn-default" href="#">AM</a></p>
-      <p><a class="btn btn-default" href="#">AUX</a><a class="btn btn-default" href="#">CD</a></p>
-    </div>
-  </div>
-</div>
+
+</body>
+</html>
