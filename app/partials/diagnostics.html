@@ -1,20 +1,42 @@
+
 <div class="container">
   <!-- Example row of columns -->
   <div class="row">
-    <div class="col-lg-2">
-      <h2>CAN1</h2>
-      <p>RESULTS HERE</p>
-      <p><a class="btn btn-default" href="#">details &raquo;</a></p>
+    
+
+    <div class="col-lg-4" align="center">
+      <h5><b>BCM_SOC</b></h5>
+      <p>
+      <input type= "button" value= "Green" ng-click="setColor1={color:'green'}"><br/>
+      <input type= "button" value= "Yellow" ng-click="setColor1={color:'yellow'}"><br/>
+      <input type= "button" value= "Red" ng-click="setColor1={color:'red'}"><br/><br/>
+      <span ng-style="setColor1">Status</span>
+      </p>
+      <!-- <p><a class="btn btn-default" href="#">details &raquo;</a></p> -->
     </div>
-    <div class="col-lg-2">
-      <h2>CAN2</h2>
-      <p>RESULTS HERE</p>
-      <p><a class="btn btn-default" href="#">details &raquo;</a></p>
+    
+
+
+
+    <div class="col-lg-4" align="center">
+      <h5><b>BCM_T_COOLANT</b></h5>
+      <input type= "button" value= "Green" ng-click="setColor2={color:'green'}"><br/>
+      <input type= "button" value= "Yellow" ng-click="setColor2={color:'yellow'}"><br/>
+      <input type= "button" value= "Red" ng-click="setColor2={color:'red'}"><br/><br/>
+      <span ng-style="setColor2">Status</span>
+      <!--<p>RESULTS HERE</p>
+      <p><a class="btn btn-default" href="#">details &raquo;</a></p> -->
    </div>
-    <div class="col-lg-2">
-      <h2>CAN3</h2>
-      <p>RESULTS HERE</p>
-      <p><a class="btn btn-default" href="#">details &raquo;</a></p>
+    
+
+    <div class="col-lg-4" align="center">
+      <h5><b>BCM_IBAT2</b></h5>
+      <input type= "button" value= "Green" ng-click="setColor3={color:'green'}"><br/>
+      <input type= "button" value= "Yellow" ng-click="setColor3={color:'yellow'}"><br/>
+      <input type= "button" value= "Red" ng-click="setColor3={color:'red'}"><br/><br/>
+      <span ng-style="setColor3">Status</span>
+      <!-- <p>RESULTS HERE</p>
+      <p><a class="btn btn-default" href="#">details &raquo;</a></p> -->
     </div>
   </div>
 </div>

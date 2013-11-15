@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="GuestBookApp" >
-  <head>
-    <meta charset="utf-8">
-    <title>Radio</title>
-    
-    <script src="js/app.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/filters.js"></script>
-    <script src="js/directives.js"></script>
-  </head>
 
-  <body>
 
     <div class="container">
     <!-- Example row of columns -->
@@ -21,8 +8,12 @@
         <div class="col-lg-4" ng-controller="RadioPageCtrl">
           <h4>VOLUME</h4>
           <p><a class="btn btn-default" ng-click="count=count+1" ng-init="count=0"> + </a></p> 
-            <h4>{{count}}</h4>
+          <h4>{{count}}</h4>
           <p><a class="btn btn-danger" ng-click="count=count-1"> - </a></p>
+          <lable>Search Station by Name:</label>
+          <input type="text" ng-model="yourName">
+          <hr>
+          <h1>{{yourName}}</h1>
         </div>
     
         
@@ -47,5 +38,4 @@
     
     </div>
 
-</body>
-</html>
+

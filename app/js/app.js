@@ -17,21 +17,21 @@ angular.module('GuestBookApp', ['GuestBookApp.services']).
     	'/radio',
     	{
     		templateUrl: 'partials/radio.html',
-    		controller: 'RadioCtrl'
+    		//controller: 'RadioCtrl'
     	}
     );
     $routeProvider.when(
         '/climate_controls',
         {
             templateUrl: 'partials/climate_controls.html',
-            controller: 'climateControlCtrl'
+            //controller: 'climateControlCtrl'
         }
     );    
     $routeProvider.when(
         '/diagnostics',
         {
             templateUrl: 'partials/diagnostics.html',
-            controller: 'DiagnosticCtrl'
+            //controller: 'DiagnosticCtrl'
         }
     );
     $routeProvider.when(

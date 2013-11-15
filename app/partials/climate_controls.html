@@ -1,27 +1,40 @@
 <div class="container">
   <!-- Example row of columns -->
    <div class="row">
-    <div class="col-sm-4">
+    
+
+    <div class="col-sm-6">
+      
       <div class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">AIR</h3>
         </div>
         <div class="panel-body">
-          <p><a class="btn btn-default" href="#"> LOW </a><a class="btn btn-primary" href="#"> MED </a><a class="btn btn-danger" href="#"> HIGH </a></p>    
+          <p><a class="btn btn-default" ng-click="buttonText='LOW'"> LOW </a><a class="btn btn-primary" ng-click="buttonText='MED'"> MED </a><a class="btn btn-danger" ng-click="buttonText='HIGH'"> HIGH </a></p>
+          <p> AIR set : {{buttonText}}</p>    
         </div>
       </div>
+      
+
       <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">TEMP</h3>
         </div>
         <div class="panel-body">
-          <p><a class="btn btn-default" href="#"> LOW </a><a class="btn btn-primary" href="#"> MED </a><a class="btn btn-danger" href="#"> HIGH </a></p>  
+          <p><a class="btn btn-default" ng-click="tempText='LOW'"> LOW </a><a class="btn btn-primary" ng-click="tempText='MED'"> MED </a><a class="btn btn-danger" ng-click="tempText='HIGH'"> HIGH </a></p> 
+          <p> Temperature Level : {{tempText}}</p> 
         </div>
       </div>
+    
     </div><!-- /.col-sm-4 -->
-    <div class="col-lg-2">
-      <p><a class="btn btn-default" href="#"> ON </a></p> 
-      <h4>AC</h4>
-      <p><a class="btn btn-danger" href="#"> OFF </a></p>
+    
+
+
+    <div class="col-lg-6">
+      <p><a class="btn btn-default" ng-click="ACText='ON'"> ON </a></p> 
+      <h4>AC: {{ACText}}</h4>
+      <p><a class="btn btn-danger" ng-click="ACText='OFF'"> OFF </a></p>
     </div>
+  
+  </div>
 </div>
