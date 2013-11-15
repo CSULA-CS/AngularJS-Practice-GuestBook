@@ -1,0 +1,57 @@
+
+  <link rel="stylesheet" href="css/taxi.css"/>
+
+<div style="text-align:center; width: 100%; ">
+<div style="width: 600px; height: 100px">
+
+  <div class="taxiWindowTop">$ Fare <div class="taxinumbers"><p id="fare">0</p></div></div>
+<div style="width: 4%; 4float: right;"></div>
+
+<div class="taxiWindowTop">$ Extras<div class="taxinumbers" style=" float: right;"><p id="extras">0.00</p></div></div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<p>
+
+    <button class="btn btn-primary btn-lg" onclick="fareIdle()" >
+      Meter 
+    </button>
+    <button class="btn btn-primary btn-lg" type="button" >
+      Time 
+    </button>
+
+    <button class="btn btn-primary btn-lg" onclick="myFunction()" type="button">
+      Extras 
+    </button>
+
+    <button class="btn btn-primary btn-lg" type="button" >
+      Stats 
+    </button>
+
+    <button class="btn btn-primary btn-lg" type="button">
+      Func 
+    </button>
+
+</p>
+
+  <script>
+function myFunction()
+{
+
+x=7.25;
+document.getElementById("extras").innerHTML=x;
+}
+
+ 
+function fareIdle(){
+
+  var fare = 3.25;
+  document.getElementById("fare").innerHTML = fare;
+  window.setInterval(
+    function(){
+      fare = fare + .05;
+      document.getElementById("fare").innerHTML = fare.toFixed(2);
+      }, 3750);
+}
+
+</script>
+</div>
