@@ -34,9 +34,16 @@ angular.module('GuestBookApp', ['GuestBookApp.services']).
             controller: 'DiagnosticCtrl'
         }
     );
+    $routeProvider.when(
+        '/taxi',
+        {
+            templateUrl: 'partials/taxi.html',
+            controller: 'TaxiCtrl'
+        }
+    );
     $routeProvider.otherwise(
     	{
-    		redirectTo: 'partials/start'
+    		redirectTo: 'start'
     	}
     );
   }]);
